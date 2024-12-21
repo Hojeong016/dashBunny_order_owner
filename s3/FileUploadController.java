@@ -19,22 +19,6 @@ public class FileUploadController {
   private final StoreManagementService storeManagementService;
   private final MenuService menuService;
 
-/*
-  @PatchMapping("/{menuId}")
-  public ResponseEntity<String> uploadMenuImageFile(@RequestParam("menuImageFile") MultipartFile menuImageFile,
-                                           @PathVariable("menuId") Long menuId) {
-    try {
-      String fileUrl = fileUploadService.uploadFile(menuImageFile, "menuImage");
-      menuService.updateMenuImage(menuId, fileUrl);
-      return ResponseEntity.ok("메뉴 이미지가 성공적으로 업데이트되었습니다.");
-    } catch (MultipartException e) {
-      return ResponseEntity.internalServerError().body("파일 업로드 실패: " + e.getMessage());
-    } catch (IOException e) {
-        throw new RuntimeException(e);
-    }
-  }
-*/
-
   @PatchMapping("/storeLogoImage/{storeId}")
   public ResponseEntity<String> uploadLogoImageFile(@RequestParam("storeLogoFile") MultipartFile logoImageFile,
                                                     @PathVariable("storeId") String storeId) {
