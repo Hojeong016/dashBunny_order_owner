@@ -64,7 +64,7 @@ public class RedisConfig {
     return template;
     }
 
-  // MenuManagement 용도의 RedisTemplate
+  // Order 용도의 RedisTemplate
   @Bean(name = "orderRedisTemplate")
   public RedisTemplate<String, OrdersProtobuf.Orders> orderRedisTemplate(RedisConnectionFactory connectionFactory) {
     RedisTemplate<String, OrdersProtobuf.Orders> redisTemplate = new RedisTemplate<>();
