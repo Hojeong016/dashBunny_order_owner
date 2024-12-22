@@ -136,13 +136,11 @@
 
 ---
 ## 주요 기능 에러 사항 및 진행 상황 
+<summary>📋 레디스 메모리 최적화 과정 기록</summary>
 
-<details>
-<summary>📋 더 자세히 보기</summary>
+https://large-train-9e9.notion.site/1598be03015c80dc9dd2e6fd494ab7a1
 
--작성
 
-</details>
 
 
 
